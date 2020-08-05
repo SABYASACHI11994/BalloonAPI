@@ -1,0 +1,17 @@
+{
+    "projectName": "BallonAPI",
+    "version": "3.0",
+    "frontend": "javascript",
+    "javascript": {
+        "framework": "none",
+        "config": {
+            "SourceDir": "aws",
+            "DistributionDir": "dist/aws",
+            "BuildCommand": "npm.cmd run-script build",
+            "StartCommand": "ng serve"
+        }
+    },
+    "providers": [
+        "awscloudformation"
+    ]
+}

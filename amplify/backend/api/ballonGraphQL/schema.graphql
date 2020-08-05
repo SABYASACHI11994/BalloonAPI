@@ -1,0 +1,54 @@
+enum Gender{
+  Male
+  Female
+  Other
+}
+
+type User @model{
+  id: ID!
+  name: String
+  email:String!
+  gender: Gender
+  age:Int
+  username:String!
+  profilePic:String
+  post: [Post] @connection(name:"createdBy")
+  card: [Card] @connection(name:"createdBy")
+  like: [Post] @connection(name:"createdBy")
+  share: [Card] @connection(name:"createdBy")
+}
+
+
+
+type Post @model {
+  id: ID!
+  title: String
+  createdBy: User! @connection(name:"createdBy")
+  cards: [Card] @connection(name:"postCard")
+  isLive: Boolean
+  isAcive: Boolean
+  likeCount:Int
+  likes: [Like] @connection(name:"likePost")
+  shareCount:Int
+  shares: [Share] @connection(name:"sharePost")
+}
+
+type Card @model{
+  id: ID!
+  post: Post! @connection(name:"postCard")
+  content: String!
+  createdBy: User! @connection(name:"createdBy")
+}
+
+type Like @model{
+  id: ID!
+  post: Post! @connection(name:"likePost")
+  createdBy: User! @connection(name:"createdBy")
+}
+
+type Share @model{
+  id: ID!
+  sharedAt:String!
+  post: Post! @connection(name:"sharePost")
+  createdBy: User! @connection(name:"createdBy")
+}

@@ -1,0 +1,38 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-ballonapi-dev-205423-authRole",
+            "UnauthRoleArn": "arn:aws:iam::288842237309:role/amplify-ballonapi-dev-205423-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::288842237309:role/amplify-ballonapi-dev-205423-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "amplify-ballonapi-dev-205423-deployment",
+            "UnauthRoleName": "amplify-ballonapi-dev-205423-unauthRole",
+            "StackName": "amplify-ballonapi-dev-205423",
+            "StackId": "arn:aws:cloudformation:ap-south-1:288842237309:stack/amplify-ballonapi-dev-205423/213bd700-d40b-11ea-97dd-028f38a10716",
+            "AmplifyAppId": "d2w6yuh39ooen6"
+        },
+        "categories": {
+            "auth": {
+                "ballonapi122041fb": {}
+            }
+        }
+    },
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-ballonapi-prod-201101-authRole",
+            "UnauthRoleArn": "arn:aws:iam::288842237309:role/amplify-ballonapi-prod-201101-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::288842237309:role/amplify-ballonapi-prod-201101-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "amplify-ballonapi-prod-201101-deployment",
+            "UnauthRoleName": "amplify-ballonapi-prod-201101-unauthRole",
+            "StackName": "amplify-ballonapi-prod-201101",
+            "StackId": "arn:aws:cloudformation:ap-south-1:288842237309:stack/amplify-ballonapi-prod-201101/30149c30-d4ce-11ea-9a28-027843ee7a02",
+            "AmplifyAppId": "d2w6yuh39ooen6"
+        },
+        "categories": {
+            "auth": {
+                "ballonapi122041fb": {}
+            }
+        }
+    }
+}

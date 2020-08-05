@@ -1,0 +1,15 @@
+projects:
+  ballonGraphQL:
+    schemaPath: amplify/backend/api/ballonGraphQL/build/schema.graphql
+    includes:
+      - ballon
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+extensions:
+  amplify:
+    version: 3
